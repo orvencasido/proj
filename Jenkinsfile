@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/orvencasido/devops-project-1.git' 
-            }
-        }
-
         stage('Build') {
             steps {
                 script {
